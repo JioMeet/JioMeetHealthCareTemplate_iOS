@@ -89,6 +89,19 @@ Please add below pod to your Podfile and run command `pod install --repo-update 
 pod 'JioMeetHealthCareTemplate_iOS', '1.0.0-alpha.1'
 ```
 
+Also please add this lines in your pod file if you're facing any issues.
+
+```swift
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
+end
+```
+
 ### Import SDK
 
 Please use below import statements
