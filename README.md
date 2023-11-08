@@ -221,7 +221,7 @@ func didPressParticipantListButton() {
 
 ## Run Project
 
-Run `pod install --repo-update` command. Open JioMeetCoreUIDemo.xcworkspace file.
+Run `pod install --repo-update` command. Open JioMeetHealthCareTemplateDemo.xcworkspace file.
 
 
 ## Reference Classes
