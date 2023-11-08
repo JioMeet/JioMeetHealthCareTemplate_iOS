@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2301CEE42AFBAC450046FF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEE32AFBAC450046FF92 /* AppDelegate.swift */; };
+		2301CEE62AFBAC450046FF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEE52AFBAC450046FF92 /* SceneDelegate.swift */; };
+		2301CEE82AFBAC450046FF92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEE72AFBAC450046FF92 /* ViewController.swift */; };
+		2301CEEB2AFBAC450046FF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2301CEE92AFBAC450046FF92 /* Main.storyboard */; };
+		2301CEED2AFBAC460046FF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2301CEEC2AFBAC460046FF92 /* Assets.xcassets */; };
+		2301CEF02AFBAC460046FF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2301CEEE2AFBAC460046FF92 /* LaunchScreen.storyboard */; };
+		2301CF002AFBAFA90046FF92 /* JoinMeetingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEF82AFBAFA90046FF92 /* JoinMeetingScreenViewController.swift */; };
+		2301CF012AFBAFA90046FF92 /* JoinInputDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEF92AFBAFA90046FF92 /* JoinInputDataView.swift */; };
+		2301CF022AFBAFA90046FF92 /* MeetingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFB2AFBAFA90046FF92 /* MeetingScreenViewController.swift */; };
+		2301CF032AFBAFA90046FF92 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFD2AFBAFA90046FF92 /* UIColor+Extension.swift */; };
+		2301CF042AFBAFA90046FF92 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFE2AFBAFA90046FF92 /* String+Extension.swift */; };
+		2301CF052AFBAFA90046FF92 /* AVFoundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFF2AFBAFA90046FF92 /* AVFoundation+Extension.swift */; };
+		45BBF1610FD3DEBD7FC77EF1 /* Pods_JioMeetHealthCareTemplateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9188160E95F822DCBFF3EF /* Pods_JioMeetHealthCareTemplateDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2301CEE02AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JioMeetHealthCareTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2301CEE32AFBAC450046FF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2301CEE52AFBAC450046FF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2301CEE72AFBAC450046FF92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2301CEEA2AFBAC450046FF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2301CEEC2AFBAC460046FF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2301CEEF2AFBAC460046FF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2301CEF12AFBAC460046FF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2301CEF82AFBAFA90046FF92 /* JoinMeetingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinMeetingScreenViewController.swift; sourceTree = "<group>"; };
+		2301CEF92AFBAFA90046FF92 /* JoinInputDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinInputDataView.swift; sourceTree = "<group>"; };
+		2301CEFB2AFBAFA90046FF92 /* MeetingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingScreenViewController.swift; sourceTree = "<group>"; };
+		2301CEFD2AFBAFA90046FF92 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2301CEFE2AFBAFA90046FF92 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2301CEFF2AFBAFA90046FF92 /* AVFoundation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVFoundation+Extension.swift"; sourceTree = "<group>"; };
+		3661EB78630D2E56635FC3F8 /* Pods-JioMeetHealthCareTemplateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JioMeetHealthCareTemplateDemo.release.xcconfig"; path = "Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ED9188160E95F822DCBFF3EF /* Pods_JioMeetHealthCareTemplateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JioMeetHealthCareTemplateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC0802FC839CE24F390B16A /* Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2301CEDD2AFBAC450046FF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BBF1610FD3DEBD7FC77EF1 /* Pods_JioMeetHealthCareTemplateDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CFF545671993BF49A824AE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBC0802FC839CE24F390B16A /* Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig */,
+				3661EB78630D2E56635FC3F8 /* Pods-JioMeetHealthCareTemplateDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2301CED72AFBAC450046FF92 = {
+			isa = PBXGroup;
+			children = (
+				2301CEE22AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */,
+				2301CEE12AFBAC450046FF92 /* Products */,
+				0CFF545671993BF49A824AE7 /* Pods */,
+				24E36920D030925E18AFAB85 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2301CEE12AFBAC450046FF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2301CEE02AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2301CEE22AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2301CEE32AFBAC450046FF92 /* AppDelegate.swift */,
+				2301CEE52AFBAC450046FF92 /* SceneDelegate.swift */,
+				2301CEE72AFBAC450046FF92 /* ViewController.swift */,
+				2301CEFC2AFBAFA90046FF92 /* Extensions */,
+				2301CEF72AFBAFA90046FF92 /* Join Meeting Screen */,
+				2301CEFA2AFBAFA90046FF92 /* Meeting Screen */,
+				2301CEE92AFBAC450046FF92 /* Main.storyboard */,
+				2301CEEC2AFBAC460046FF92 /* Assets.xcassets */,
+				2301CEEE2AFBAC460046FF92 /* LaunchScreen.storyboard */,
+				2301CEF12AFBAC460046FF92 /* Info.plist */,
+			);
+			path = JioMeetHealthCareTemplateDemo;
+			sourceTree = "<group>";
+		};
+		2301CEF72AFBAFA90046FF92 /* Join Meeting Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2301CEF82AFBAFA90046FF92 /* JoinMeetingScreenViewController.swift */,
+				2301CEF92AFBAFA90046FF92 /* JoinInputDataView.swift */,
+			);
+			path = "Join Meeting Screen";
+			sourceTree = "<group>";
+		};
+		2301CEFA2AFBAFA90046FF92 /* Meeting Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2301CEFB2AFBAFA90046FF92 /* MeetingScreenViewController.swift */,
+			);
+			path = "Meeting Screen";
+			sourceTree = "<group>";
+		};
+		2301CEFC2AFBAFA90046FF92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2301CEFD2AFBAFA90046FF92 /* UIColor+Extension.swift */,
+				2301CEFE2AFBAFA90046FF92 /* String+Extension.swift */,
+				2301CEFF2AFBAFA90046FF92 /* AVFoundation+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24E36920D030925E18AFAB85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED9188160E95F822DCBFF3EF /* Pods_JioMeetHealthCareTemplateDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2301CEDF2AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2301CEF42AFBAC460046FF92 /* Build configuration list for PBXNativeTarget "JioMeetHealthCareTemplateDemo" */;
+			buildPhases = (
+				44DDDF6FE78B20352C93082D /* [CP] Check Pods Manifest.lock */,
+				2301CEDC2AFBAC450046FF92 /* Sources */,
+				2301CEDD2AFBAC450046FF92 /* Frameworks */,
+				2301CEDE2AFBAC450046FF92 /* Resources */,
+				3C0FCB1E879AF59566CE7326 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JioMeetHealthCareTemplateDemo;
+			productName = JioMeetHealthCareTemplateDemo;
+			productReference = 2301CEE02AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2301CED82AFBAC450046FF92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2301CEDF2AFBAC450046FF92 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 2301CEDB2AFBAC450046FF92 /* Build configuration list for PBXProject "JioMeetHealthCareTemplateDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2301CED72AFBAC450046FF92;
+			productRefGroup = 2301CEE12AFBAC450046FF92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2301CEDF2AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2301CEDE2AFBAC450046FF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2301CEF02AFBAC460046FF92 /* LaunchScreen.storyboard in Resources */,
+				2301CEED2AFBAC460046FF92 /* Assets.xcassets in Resources */,
+				2301CEEB2AFBAC450046FF92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0FCB1E879AF59566CE7326 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44DDDF6FE78B20352C93082D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JioMeetHealthCareTemplateDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2301CEDC2AFBAC450046FF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2301CF042AFBAFA90046FF92 /* String+Extension.swift in Sources */,
+				2301CF032AFBAFA90046FF92 /* UIColor+Extension.swift in Sources */,
+				2301CF002AFBAFA90046FF92 /* JoinMeetingScreenViewController.swift in Sources */,
+				2301CF012AFBAFA90046FF92 /* JoinInputDataView.swift in Sources */,
+				2301CEE82AFBAC450046FF92 /* ViewController.swift in Sources */,
+				2301CEE42AFBAC450046FF92 /* AppDelegate.swift in Sources */,
+				2301CF022AFBAFA90046FF92 /* MeetingScreenViewController.swift in Sources */,
+				2301CF052AFBAFA90046FF92 /* AVFoundation+Extension.swift in Sources */,
+				2301CEE62AFBAC450046FF92 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2301CEE92AFBAC450046FF92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2301CEEA2AFBAC450046FF92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2301CEEE2AFBAC460046FF92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2301CEEF2AFBAC460046FF92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2301CEF22AFBAC460046FF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2301CEF32AFBAC460046FF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2301CEF52AFBAC460046FF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC0802FC839CE24F390B16A /* Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSQ9KLSSUY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JioMeetHealthCareTemplateDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to camera for meetings";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow access to mic for meetings";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jio.telemedicine.JioMeetHealthCareTemplateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2301CEF62AFBAC460046FF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3661EB78630D2E56635FC3F8 /* Pods-JioMeetHealthCareTemplateDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSQ9KLSSUY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JioMeetHealthCareTemplateDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to camera for meetings";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow access to mic for meetings";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jio.telemedicine.JioMeetHealthCareTemplateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2301CEDB2AFBAC450046FF92 /* Build configuration list for PBXProject "JioMeetHealthCareTemplateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2301CEF22AFBAC460046FF92 /* Debug */,
+				2301CEF32AFBAC460046FF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2301CEF42AFBAC460046FF92 /* Build configuration list for PBXNativeTarget "JioMeetHealthCareTemplateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2301CEF52AFBAC460046FF92 /* Debug */,
+				2301CEF62AFBAC460046FF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2301CED82AFBAC450046FF92 /* Project object */;
+}
