@@ -87,7 +87,7 @@ Currently SDK support portarait orientation for the iPhone and landscape for the
 Please add below pod to your Podfile and run command `pod install --repo-update --verbose`.
 
 ```ruby
-pod 'JioMeetHealthCareTemplate_iOS', '1.0.0-alpha.2'
+pod 'JioMeetHealthCareTemplate_iOS', '1.0.0-alpha.3'
 ```
 
 Also please add this lines in your pod file if you're facing any issues.
