@@ -20,6 +20,7 @@ class MeetingScreenViewController: UIViewController {
 	public var meetingPIN = ""
 	public var userDisplayName = ""
 	public var hostToken: String?
+	private var identifier = UUID()
 	
 	// MARK: - Super Methods
 	public override func viewDidLoad() {
@@ -47,6 +48,7 @@ class MeetingScreenViewController: UIViewController {
             isInitialAudioOn: false,
             isInitialVideoOn: false
         )
+		meetingView.addMeetingEventsDelegate(delegate: self, identifier: identifier)
         meetingView.joinMeeting(meetingData: joinMeetingData, config: joinMeetingConfig, delegate: self)
 	}
 	
@@ -83,16 +85,91 @@ class MeetingScreenViewController: UIViewController {
 }
 
 extension MeetingScreenViewController: JMMeetingViewDelegate {
-    func didLocalParticipantLeaveMeeting() {
-        navigationController?.popViewController(animated: true)
-    }
-    
     func didPressParticipantListButton() {
         
     }
-    
-	func didLocalUserFailedToJoinMeeting(errorMessage: String) {
-		showMeetingJoinError(message: errorMessage)
+}
+
+extension MeetingScreenViewController: JMClientDelegate {
+	func jmClient(_ meeting: JMMeeting, didLocalUserJoinedMeeting user: JMMeetingUser) {
+		print("LOGS ::: Main App ::: Local User Join Meeting")
 	}
 	
+	func jmClient(_ meeting: JMMeeting, didLocalUserMicStatusUpdated isMuted: Bool) {
+		print("LOGS ::: Main App ::: Local User Mic Muted ::: \(isMuted)")
+	}
+	
+	func jmClient(_ meeting: JMMeeting, didLocalUserVideoStatusUpdated isMuted: Bool) {
+		print("LOGS ::: Main App ::: Local User Video Muted ::: \(isMuted)")
+	}
+	
+	func jmClient(_ meeting: JMMeeting, didRemoteUserJoinedMeeting user: JMMeetingUser) {
+		print("LOGS ::: Main App ::: Remote User \(user.displayName) Join Meeting")
+	}
+	
+	func jmClient(_ meeting: JMMeeting, didRemoteUserMicStatusUpdated user: JMMeetingUser, isMuted: Bool) {
+		print("LOGS ::: Main App ::: Remote User \(user.displayName) Mic Muted ::: \(isMuted)")
+	}
+	
+	func jmClient(_ meeting: JMMeeting, didRemoteUserVideoStatusUpdated user: JMMeetingUser, isMuted: Bool) {
+		print("LOGS ::: Main App ::: Remote User \(user.displayName) Video Muted ::: \(isMuted)")
+	}
+	
+	func jmClient(_ meeting: JMMeeting, didRemoteUserLeftMeeting user: JMMeetingUser, reason: JMUserLeftReason) {
+		print("LOGS ::: Main App ::: Remote User \(user.displayName) Left Meeting")
+	}
+	
+	func jmClient(_ meeting: JMMeeting, didLocalUserLeftMeeting reason: JMUserLeftReason) {
+		print("LOGS ::: Main App ::: Local User Left Meeting")
+		navigationController?.popViewController(animated: true)
+	}
+	
+	func jmClient(didLocalUserFailedToJoinMeeting error: JMMeetingJoinError) {
+		print("LOGS ::: Main App ::: Failed to Join Meeting")
+		var errorMessageString = ""
+		switch error {
+		case .invalidConfiguration:
+			errorMessageString = "Failed to Get Configurations"
+		case .invalidMeetingDetails:
+			errorMessageString = "Invalid Meeting ID or PIN, Please check again."
+		case .meetingExpired:
+			errorMessageString = "This meeting has been expired."
+		case .meetingLocked:
+			errorMessageString = "Sorry, you cannot join this meeting because room is locked."
+		case .failedToRegisterUser:
+			errorMessageString = "Failed to Register User for Meeting."
+		case .maxParticipantsLimit:
+			errorMessageString = "Maximum Participant Limit has been reached for this meeting."
+		case .failedToJoinCall(let errorMessage):
+			errorMessageString = errorMessage
+		case .other(let errorMessage):
+			errorMessageString = errorMessage
+		default:
+			errorMessageString = "Unknown Error Occurred."
+		}
+		
+		showMeetingJoinError(message: errorMessageString)
+	}
+	
+	func jmClient(didErrorOccured error: JMMeetingError) {
+		var errorMessage = ""
+		switch error {
+		case .cannotChangeMicStateInAudienceMode:
+			errorMessage = "You are in Audience Mode. Cannot update Mic status"
+		case .cannotChangeCameraStateinAudienceMode:
+			errorMessage = "You are in Audience Mode. Cannot update Camera status"
+		case .audioPermissionNotGranted:
+			errorMessage = "Mic permission is not granted. Please allow Mic permission in app setting."
+		case .videoPermissionNotGranted:
+			errorMessage = "Camera permission is not granted. Please allow Camera permission in app setting."
+		default:
+			errorMessage = "Some other error Occurred"
+		}
+		
+		let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+		let okAction = UIAlertAction(title: "Ok", style: .default)
+		errorAlertController.addAction(okAction)
+		present(errorAlertController, animated: true)
+		
+	}
 }

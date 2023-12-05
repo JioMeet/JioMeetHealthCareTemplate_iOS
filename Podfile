@@ -7,7 +7,7 @@ target 'JioMeetHealthCareTemplateDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'JioMeetHealthCareTemplate_iOS', '1.0.0-alpha.2'
+  pod 'JioMeetHealthCareTemplate_iOS', '1.0.0-alpha.3'
   
   # Pods for JioMeetHealthCareTemplateDemo
   
