@@ -87,29 +87,22 @@ Currently SDK support portarait orientation for the iPhone and landscape for the
 Please add below pod to your Podfile and run command `pod install --repo-update --verbose`.
 
 ```ruby
-pod 'JioMeetHealthCareTemplate_iOS', '1.0.0-alpha.3'
+pod 'JioMeetHealthCareTemplate_iOS', '2.0.0'
 ```
 
 Also please add this lines in your pod file if you're facing any issues.
 
 ```swift
 post_install do |installer|
-  xcode_base_version = `xcodebuild -version | grep 'Xcode' | awk '{print $2}' | cut -d . -f 1`
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'No'
-      # For xcode 15+ only
-      if config.base_configuration_reference && Integer(xcode_base_version) >= 15
-        xcconfig_path = config.base_configuration_reference.real_path
-        xcconfig = File.read(xcconfig_path)
-        xcconfig_mod = xcconfig.gsub(/DT_TOOLCHAIN_DIR/, "TOOLCHAIN_DIR")
-        File.open(xcconfig_path, "w") { |file| file << xcconfig_mod }
-      end
     end
   end
 end
+
 ```
 
 ### Import SDK
@@ -321,6 +314,87 @@ Run `pod install --repo-update` command. Open JioMeetHealthCareTemplateDemo.xcwo
 ## Reference Classes
 
 Please check `MeetingScreenViewController` class for integration reference.
+
+
+## Screen Share Integration
+
+
+### Add Broadcast Upload Extension
+
+You need to create a Broadcast Upload Extension to enable the screen sharing process. To do that,
+
+open your project, go to **Xcode -> File -> Target... ->** 
+
+![create_broadcast_upload_extension](https://storage.googleapis.com/cpass-sdk/assets/screenshots/iOS/screenshare_1.png)
+
+Select **Broadcast Upload Extension** and click on **Next**
+
+![select_broadcast_upload_extension](https://storage.googleapis.com/cpass-sdk/assets/screenshots/iOS/screenshare_2.png)
+
+Fill the **Product name** and other info, uncheck **Include UI Extension**, and click **Finish**.
+
+![broadcast_upload_extension_info](https://storage.googleapis.com/cpass-sdk/assets/screenshots/iOS/screenshare_3.png)
+
+Activate the Extension
+
+![activate_broadcast_upload_extension](https://storage.googleapis.com/cpass-sdk/assets/screenshots/iOS/screenshare_4.png)
+
+Xcode automatically creates the Extension folder, which contains the **SampleHandler.swift** file.
+
+
+**NOTE: Please set deployment target for Broadcast Upload Extension same as of your main app.**
+
+
+### Add JioMeet Screen Share SDK
+
+Go to your Podfile. Add `JioMeetScreenShareSDK_iOS` pod for your newly created broadcast upload extension and run `pod install --repo-update --verbose` command to install the SDK.
+
+```ruby
+target 'ScreenShareExtension' do
+    use_frameworks!
+    pod 'JioMeetScreenShareSDK_iOS', '4.0.7'
+end
+```
+
+**NOTE: `ScreenShareExtension` is name of target you fill while creating `Broadcast Upload Extension`**
+
+
+### Enable App Groups
+
+You need to enable app groups for your main app and screenshare extension. Please follow guide from below link.
+[https://developer.apple.com/documentation/xcode/configuring-app-groups](https://developer.apple.com/documentation/xcode/configuring-app-groups)
+
+[https://www.appcoda.com/app-group-macos-ios-communication/](https://www.appcoda.com/app-group-macos-ios-communication/)
+
+
+### Edit `SampleHandler` file.
+
+Go to your `SampleHandler.swift` file. Replace the whole file content with content below.
+
+**NOTE: Please change `YOUR_APP_GROUP_NAME_IDENTIFIER` with app group you created in above step.**
+
+```swift
+import ReplayKit
+import JioMeetScreenShareSDK
+
+class SampleHandler: JMScreenShareHandler {
+
+    override func getAppGroupsIdentifier() -> String {
+        return "YOUR_APP_GROUP_NAME_IDENTIFIER"
+    }
+}
+```
+
+
+### Main App Changes
+
+You need to provide both your app-group and screen share extension bundle identifier to JioMeet UI SDK. Please use `JMUIKit` class `appGroupName` and `screenShareExtensionBundleIdentifier` static variables to provide this info.
+
+```swift
+
+meetingView.setScreenShareParams(appGroupName: "YOUR_APP_GROUP_NAME_IDENTIFIER", screenShareExtensionBundleIdentifier: "BROADCAST_UPLOAD_EXTENSION_IDENTIFIER")
+```
+
 
 ## Troubleshooting
 

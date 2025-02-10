@@ -48,6 +48,8 @@ class MeetingScreenViewController: UIViewController {
             isInitialAudioOn: false,
             isInitialVideoOn: false
         )
+        meetingView.setEnviorment(enviroment: "production")
+        meetingView.setScreenShareParams(appGroupName: "group.com.jio.jiomeet.nativesdk", screenShareExtensionBundleIdentifier: "com.jio.jiomeet.nativesdk.broadcast")
 		meetingView.addMeetingEventsDelegate(delegate: self, identifier: identifier)
         meetingView.joinMeeting(meetingData: joinMeetingData, config: joinMeetingConfig, delegate: self)
 	}

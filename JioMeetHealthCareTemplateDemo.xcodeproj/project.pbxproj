@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1916E9CADB81F43373085479 /* Pods_ScreenShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEF53A866E531B9BAADD483 /* Pods_ScreenShareExtension.framework */; };
 		2301CEE42AFBAC450046FF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEE32AFBAC450046FF92 /* AppDelegate.swift */; };
 		2301CEE62AFBAC450046FF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEE52AFBAC450046FF92 /* SceneDelegate.swift */; };
 		2301CEE82AFBAC450046FF92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEE72AFBAC450046FF92 /* ViewController.swift */; };
@@ -19,10 +20,37 @@
 		2301CF032AFBAFA90046FF92 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFD2AFBAFA90046FF92 /* UIColor+Extension.swift */; };
 		2301CF042AFBAFA90046FF92 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFE2AFBAFA90046FF92 /* String+Extension.swift */; };
 		2301CF052AFBAFA90046FF92 /* AVFoundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2301CEFF2AFBAFA90046FF92 /* AVFoundation+Extension.swift */; };
+		231CE7AF2D59E70100CEC244 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231CE7862D59E45400CEC244 /* ReplayKit.framework */; };
+		231CE7B62D59E70100CEC244 /* ScreenShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 231CE7AE2D59E70100CEC244 /* ScreenShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		45BBF1610FD3DEBD7FC77EF1 /* Pods_JioMeetHealthCareTemplateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9188160E95F822DCBFF3EF /* Pods_JioMeetHealthCareTemplateDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		231CE7B42D59E70100CEC244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2301CED82AFBAC450046FF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 231CE7AD2D59E70100CEC244;
+			remoteInfo = ScreenShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		231CE78F2D59E45400CEC244 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				231CE7B62D59E70100CEC244 /* ScreenShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A406C45BB77833DC3001C92 /* Pods-ScreenShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareExtension.debug.xcconfig"; path = "Target Support Files/Pods-ScreenShareExtension/Pods-ScreenShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		2301CEE02AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JioMeetHealthCareTemplateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2301CEE32AFBAC450046FF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2301CEE52AFBAC450046FF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,10 +65,32 @@
 		2301CEFD2AFBAFA90046FF92 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2301CEFE2AFBAFA90046FF92 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		2301CEFF2AFBAFA90046FF92 /* AVFoundation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVFoundation+Extension.swift"; sourceTree = "<group>"; };
+		231CE7862D59E45400CEC244 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		231CE7A82D59E69300CEC244 /* JioMeetHealthCareTemplateDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JioMeetHealthCareTemplateDemo.entitlements; sourceTree = "<group>"; };
+		231CE7AE2D59E70100CEC244 /* ScreenShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3661EB78630D2E56635FC3F8 /* Pods-JioMeetHealthCareTemplateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JioMeetHealthCareTemplateDemo.release.xcconfig"; path = "Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3CEF53A866E531B9BAADD483 /* Pods_ScreenShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F87720F29130559FE91A23F /* Pods-ScreenShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShareExtension.release.xcconfig"; path = "Target Support Files/Pods-ScreenShareExtension/Pods-ScreenShareExtension.release.xcconfig"; sourceTree = "<group>"; };
+		AA0D5E26A4827219797D1653 /* Pods-ScreenShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShare.release.xcconfig"; path = "Target Support Files/Pods-ScreenShare/Pods-ScreenShare.release.xcconfig"; sourceTree = "<group>"; };
+		C22DA4D1F7DD47A8C52398E2 /* Pods_ScreenShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE10100346BE61042CF2F5F2 /* Pods-ScreenShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenShare.debug.xcconfig"; path = "Target Support Files/Pods-ScreenShare/Pods-ScreenShare.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9188160E95F822DCBFF3EF /* Pods_JioMeetHealthCareTemplateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JioMeetHealthCareTemplateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC0802FC839CE24F390B16A /* Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig"; path = "Target Support Files/Pods-JioMeetHealthCareTemplateDemo/Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		231CE7B72D59E70100CEC244 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 231CE7AD2D59E70100CEC244 /* ScreenShareExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		231CE7B02D59E70100CEC244 /* ScreenShareExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (231CE7B72D59E70100CEC244 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ScreenShareExtension; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2301CEDD2AFBAC450046FF92 /* Frameworks */ = {
@@ -48,6 +98,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				45BBF1610FD3DEBD7FC77EF1 /* Pods_JioMeetHealthCareTemplateDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		231CE7AB2D59E70100CEC244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231CE7AF2D59E70100CEC244 /* ReplayKit.framework in Frameworks */,
+				1916E9CADB81F43373085479 /* Pods_ScreenShareExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +118,10 @@
 			children = (
 				FBC0802FC839CE24F390B16A /* Pods-JioMeetHealthCareTemplateDemo.debug.xcconfig */,
 				3661EB78630D2E56635FC3F8 /* Pods-JioMeetHealthCareTemplateDemo.release.xcconfig */,
+				CE10100346BE61042CF2F5F2 /* Pods-ScreenShare.debug.xcconfig */,
+				AA0D5E26A4827219797D1653 /* Pods-ScreenShare.release.xcconfig */,
+				1A406C45BB77833DC3001C92 /* Pods-ScreenShareExtension.debug.xcconfig */,
+				6F87720F29130559FE91A23F /* Pods-ScreenShareExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -67,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				2301CEE22AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */,
+				231CE7B02D59E70100CEC244 /* ScreenShareExtension */,
 				2301CEE12AFBAC450046FF92 /* Products */,
 				0CFF545671993BF49A824AE7 /* Pods */,
 				24E36920D030925E18AFAB85 /* Frameworks */,
@@ -77,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				2301CEE02AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo.app */,
+				231CE7AE2D59E70100CEC244 /* ScreenShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +149,7 @@
 		2301CEE22AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				231CE7A82D59E69300CEC244 /* JioMeetHealthCareTemplateDemo.entitlements */,
 				2301CEE32AFBAC450046FF92 /* AppDelegate.swift */,
 				2301CEE52AFBAC450046FF92 /* SceneDelegate.swift */,
 				2301CEE72AFBAC450046FF92 /* ViewController.swift */,
@@ -129,6 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				ED9188160E95F822DCBFF3EF /* Pods_JioMeetHealthCareTemplateDemo.framework */,
+				231CE7862D59E45400CEC244 /* ReplayKit.framework */,
+				C22DA4D1F7DD47A8C52398E2 /* Pods_ScreenShare.framework */,
+				3CEF53A866E531B9BAADD483 /* Pods_ScreenShareExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,15 +214,38 @@
 				2301CEDD2AFBAC450046FF92 /* Frameworks */,
 				2301CEDE2AFBAC450046FF92 /* Resources */,
 				3C0FCB1E879AF59566CE7326 /* [CP] Embed Pods Frameworks */,
+				231CE78F2D59E45400CEC244 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				231CE7B52D59E70100CEC244 /* PBXTargetDependency */,
 			);
 			name = JioMeetHealthCareTemplateDemo;
 			productName = JioMeetHealthCareTemplateDemo;
 			productReference = 2301CEE02AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		231CE7AD2D59E70100CEC244 /* ScreenShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 231CE7B82D59E70100CEC244 /* Build configuration list for PBXNativeTarget "ScreenShareExtension" */;
+			buildPhases = (
+				15D5E5055C0ACA147A2C6D47 /* [CP] Check Pods Manifest.lock */,
+				231CE7AA2D59E70100CEC244 /* Sources */,
+				231CE7AB2D59E70100CEC244 /* Frameworks */,
+				231CE7AC2D59E70100CEC244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				231CE7B02D59E70100CEC244 /* ScreenShareExtension */,
+			);
+			name = ScreenShareExtension;
+			productName = ScreenShareExtension;
+			productReference = 231CE7AE2D59E70100CEC244 /* ScreenShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,11 +254,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					2301CEDF2AFBAC450046FF92 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					231CE7AD2D59E70100CEC244 = {
+						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
@@ -184,6 +279,7 @@
 			projectRoot = "";
 			targets = (
 				2301CEDF2AFBAC450046FF92 /* JioMeetHealthCareTemplateDemo */,
+				231CE7AD2D59E70100CEC244 /* ScreenShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -199,9 +295,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		231CE7AC2D59E70100CEC244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15D5E5055C0ACA147A2C6D47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenShareExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3C0FCB1E879AF59566CE7326 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,7 +385,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		231CE7AA2D59E70100CEC244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		231CE7B52D59E70100CEC244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 231CE7AD2D59E70100CEC244 /* ScreenShareExtension */;
+			targetProxy = 231CE7B42D59E70100CEC244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2301CEE92AFBAC450046FF92 /* Main.storyboard */ = {
@@ -402,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JioMeetHealthCareTemplateDemo/JioMeetHealthCareTemplateDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VSQ9KLSSUY;
@@ -420,7 +561,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jio.telemedicine.JioMeetHealthCareTemplateDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jio.jiomeet.nativesdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -434,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JioMeetHealthCareTemplateDemo/JioMeetHealthCareTemplateDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VSQ9KLSSUY;
@@ -452,8 +594,73 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jio.telemedicine.JioMeetHealthCareTemplateDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jio.jiomeet.nativesdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		231CE7B92D59E70100CEC244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A406C45BB77833DC3001C92 /* Pods-ScreenShareExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = ScreenShareExtension/ScreenShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSQ9KLSSUY;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jio.jiomeet.nativesdk.broadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		231CE7BA2D59E70100CEC244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F87720F29130559FE91A23F /* Pods-ScreenShareExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = ScreenShareExtension/ScreenShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSQ9KLSSUY;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jio.jiomeet.nativesdk.broadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,6 +684,15 @@
 			buildConfigurations = (
 				2301CEF52AFBAC460046FF92 /* Debug */,
 				2301CEF62AFBAC460046FF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		231CE7B82D59E70100CEC244 /* Build configuration list for PBXNativeTarget "ScreenShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231CE7B92D59E70100CEC244 /* Debug */,
+				231CE7BA2D59E70100CEC244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

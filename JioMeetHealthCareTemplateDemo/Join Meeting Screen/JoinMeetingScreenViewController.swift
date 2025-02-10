@@ -51,6 +51,10 @@ class JoinMeetingScreenViewController: UIViewController {
 			name: UIResponder.keyboardWillChangeFrameNotification,
 			object: nil
 		)
+        meetingIdInputView.updateTextFieldText("8755124008")
+        meetingPinInputView.updateTextFieldText("wGgF7")
+        userNameInputView.updateTextFieldText("AAAAA")
+
 	}
 }
 
