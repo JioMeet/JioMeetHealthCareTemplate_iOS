@@ -25,7 +25,13 @@
    - [Implement JMClientDelegate Methods](#implement-jmclientdelegate-methods)
 7. [Run Project](#run-project)
 8. [Reference Classes](#reference-classes)
-9. [Troubleshooting](#troubleshooting)
+9. [Screen Share Integration](#screen-share-integration)
+    - [Add Broadcast Upload Extension](#add-broadcast-upload-extension)
+    - [Add JioMeet Screen Share SDK](#add-jiomeet-screen-share-sdk)
+    - [Enable App Groups](#enable-app-groups)
+    - [Edit SampleHandler file](#edit-samplehandler-file)
+    - [Main App Changes](#main-app-changes)
+10. [Troubleshooting](#troubleshooting)
 
 ## Introduction
 
