@@ -394,7 +394,7 @@ class SampleHandler: JMScreenShareHandler {
 
 ### Main App Changes
 
-You need to provide both your app-group and screen share extension bundle identifier to JioMeet UI SDK. Please use `JMUIKit` class `appGroupName` and `screenShareExtensionBundleIdentifier` static variables to provide this info.
+You need to provide both your app-group and screen share extension bundle identifier to SDK. Use below methode to provide screen share parameters
 
 ```swift
 
